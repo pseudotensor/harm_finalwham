@@ -1,0 +1,58 @@
+main.o: main.c defs.h global.h metric.h coord.h definit.h init.h mympi.h \
+ mpidefs.h
+metric.o: metric.c decs.h global.h metric.h coord.h definit.h init.h mympi.h \
+ mpidecs.h
+coord.o: coord.c decs.h global.h metric.h coord.h definit.h init.h mympi.h \
+ mpidecs.h
+phys.o: phys.c decs.h global.h metric.h coord.h definit.h init.h mympi.h \
+ mpidecs.h
+step_ch.o: step_ch.c decs.h global.h metric.h coord.h definit.h init.h mympi.h \
+ mpidecs.h
+phys.ffde.o: phys.ffde.c decs.h global.h metric.h coord.h definit.h init.h \
+ mympi.h mpidecs.h
+phys.coldgrmhd.o: phys.coldgrmhd.c decs.h global.h metric.h coord.h definit.h \
+ init.h mympi.h mpidecs.h u2p_defs.h decs.h global.h mpidecs.h utoprim_jon_eos.c
+eos.o: eos.c decs.h global.h metric.h coord.h definit.h init.h mympi.h mpidecs.h
+vchar.o: vchar.c decs.h global.h metric.h coord.h definit.h init.h mympi.h \
+ mpidecs.h
+transforms.o: transforms.c decs.h global.h metric.h coord.h definit.h init.h \
+ mympi.h mpidecs.h
+sources.o: sources.c decs.h global.h metric.h coord.h definit.h init.h mympi.h \
+ mpidecs.h
+gaussj.o: gaussj.c decs.h global.h metric.h coord.h definit.h init.h mympi.h \
+ mpidecs.h
+lubksb.o: lubksb.c decs.h global.h metric.h coord.h definit.h init.h mympi.h \
+ mpidecs.h
+ludcmp.o: ludcmp.c decs.h global.h metric.h coord.h definit.h init.h mympi.h \
+ mpidecs.h
+mnewt.o: mnewt.c decs.h global.h metric.h coord.h definit.h init.h mympi.h \
+ mpidecs.h
+nrutil.o: nrutil.c decs.h global.h metric.h coord.h definit.h init.h mympi.h \
+ mpidecs.h
+ranc.o: ranc.c global.h metric.h coord.h definit.h init.h mympi.h
+tensor.o: tensor.c decs.h global.h metric.h coord.h definit.h init.h mympi.h \
+ mpidecs.h
+utoprimgen.o: utoprimgen.c decs.h global.h metric.h coord.h definit.h init.h \
+ mympi.h mpidecs.h
+dudp_calc_3vel.o: dudp_calc_3vel.c decs.h global.h metric.h coord.h definit.h \
+ init.h mympi.h mpidecs.h
+dudp_calc.o: dudp_calc.c decs.h global.h metric.h coord.h definit.h init.h \
+ mympi.h mpidecs.h
+utoprim.o: utoprim.c decs.h global.h metric.h coord.h definit.h init.h mympi.h \
+ mpidecs.h
+utoprim_2d.o: utoprim_2d.c decs.h global.h metric.h coord.h definit.h init.h \
+ mympi.h mpidecs.h utoprim_2d.h utoprim_1d2d.h
+utoprim_1d.o: utoprim_1d.c decs.h global.h metric.h coord.h definit.h init.h \
+ mympi.h mpidecs.h utoprim_1d.h utoprim_1d2d.h
+utoprim_1d_opt.o: utoprim_1d_opt.c decs.h global.h metric.h coord.h definit.h \
+ init.h mympi.h mpidecs.h utoprim_1d_opt.h
+utoprim_ldz.o: utoprim_ldz.c decs.h global.h metric.h coord.h definit.h init.h \
+ mympi.h mpidecs.h
+utoprim_jon.o: utoprim_jon.c u2p_defs.h decs.h global.h metric.h coord.h \
+ definit.h init.h mympi.h mpidecs.h u2p_util.c global.h utoprim_jon_eos.c
+utoprim_1d_final.o: utoprim_1d_final.c u2p_defs.h decs.h global.h metric.h \
+ coord.h definit.h init.h mympi.h mpidecs.h u2p_util.c global.h utoprim_jon_eos.c
+utoprim_2d_final.o: utoprim_2d_final.c u2p_defs.h decs.h global.h metric.h \
+ coord.h definit.h init.h mympi.h mpidecs.h u2p_util.c global.h utoprim_jon_eos.c
+utoprim_5d2_final.o: utoprim_5d2_final.c u2p_defs.h decs.h global.h metric.h \
+ coord.h definit.h init.h mympi.h mpidecs.h

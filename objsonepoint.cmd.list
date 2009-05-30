@@ -1,0 +1,60 @@
+main.o :
+	mpicc -cc=icc -O2 -Wall -Wcheck -Wshadow -w2 -wd=175,177,279,593,869,810,981,1418,1419,310,1572 -c main.c -lm
+metric.o :
+	mpicc -cc=icc -O2 -Wall -Wcheck -Wshadow -w2 -wd=175,177,279,593,869,810,981,1418,1419,310,1572 -c metric.c -lm
+coord.o :
+	mpicc -cc=icc -O2 -Wall -Wcheck -Wshadow -w2 -wd=175,177,279,593,869,810,981,1418,1419,310,1572 -c coord.c -lm
+phys.o :
+	mpicc -cc=icc -O2 -Wall -Wcheck -Wshadow -w2 -wd=175,177,279,593,869,810,981,1418,1419,310,1572 -c phys.c -lm
+step_ch.o :
+	mpicc -cc=icc -O2 -Wall -Wcheck -Wshadow -w2 -wd=175,177,279,593,869,810,981,1418,1419,310,1572 -c step_ch.c -lm
+phys.ffde.o :
+	mpicc -cc=icc -O2 -Wall -Wcheck -Wshadow -w2 -wd=175,177,279,593,869,810,981,1418,1419,310,1572 -c phys.ffde.c -lm
+phys.coldgrmhd.o :
+	mpicc -cc=icc -O2 -Wall -Wcheck -Wshadow -w2 -wd=175,177,279,593,869,810,981,1418,1419,310,1572 -c phys.coldgrmhd.c -lm
+eos.o :
+	mpicc -cc=icc -O2 -Wall -Wcheck -Wshadow -w2 -wd=175,177,279,593,869,810,981,1418,1419,310,1572 -c eos.c -lm
+vchar.o :
+	mpicc -cc=icc -O2 -Wall -Wcheck -Wshadow -w2 -wd=175,177,279,593,869,810,981,1418,1419,310,1572 -c vchar.c -lm
+transforms.o :
+	mpicc -cc=icc -O2 -Wall -Wcheck -Wshadow -w2 -wd=175,177,279,593,869,810,981,1418,1419,310,1572 -c transforms.c -lm
+sources.o :
+	mpicc -cc=icc -O2 -Wall -Wcheck -Wshadow -w2 -wd=175,177,279,593,869,810,981,1418,1419,310,1572 -c sources.c -lm
+gaussj.o :
+	mpicc -cc=icc -O2 -Wall -Wcheck -Wshadow -w2 -wd=175,177,279,593,869,810,981,1418,1419,310,1572 -c gaussj.c -lm
+lubksb.o :
+	mpicc -cc=icc -O2 -Wall -Wcheck -Wshadow -w2 -wd=175,177,279,593,869,810,981,1418,1419,310,1572 -c lubksb.c -lm
+ludcmp.o :
+	mpicc -cc=icc -O2 -Wall -Wcheck -Wshadow -w2 -wd=175,177,279,593,869,810,981,1418,1419,310,1572 -c ludcmp.c -lm
+mnewt.o :
+	mpicc -cc=icc -O2 -Wall -Wcheck -Wshadow -w2 -wd=175,177,279,593,869,810,981,1418,1419,310,1572 -c mnewt.c -lm
+nrutil.o :
+	mpicc -cc=icc -O2 -Wall -Wcheck -Wshadow -w2 -wd=175,177,279,593,869,810,981,1418,1419,310,1572 -c nrutil.c -lm
+ranc.o :
+	mpicc -cc=icc -O2 -Wall -Wcheck -Wshadow -w2 -wd=175,177,279,593,869,810,981,1418,1419,310,1572 -c ranc.c -lm
+tensor.o :
+	mpicc -cc=icc -O2 -Wall -Wcheck -Wshadow -w2 -wd=175,177,279,593,869,810,981,1418,1419,310,1572 -c tensor.c -lm
+utoprimgen.o :
+	mpicc -cc=icc -O2 -Wall -Wcheck -Wshadow -w2 -wd=175,177,279,593,869,810,981,1418,1419,310,1572 -c utoprimgen.c -lm
+dudp_calc_3vel.o :
+	mpicc -cc=icc -O2 -Wall -Wcheck -Wshadow -w2 -wd=175,177,279,593,869,810,981,1418,1419,310,1572 -c dudp_calc_3vel.c -lm
+dudp_calc.o :
+	mpicc -cc=icc -O2 -Wall -Wcheck -Wshadow -w2 -wd=175,177,279,593,869,810,981,1418,1419,310,1572 -c dudp_calc.c -lm
+utoprim.o :
+	mpicc -cc=icc -O2 -Wall -Wcheck -Wshadow -w2 -wd=175,177,279,593,869,810,981,1418,1419,310,1572 -c utoprim.c -lm
+utoprim_2d.o :
+	mpicc -cc=icc -O2 -Wall -Wcheck -Wshadow -w2 -wd=175,177,279,593,869,810,981,1418,1419,310,1572 -c utoprim_2d.c -lm
+utoprim_1d.o :
+	mpicc -cc=icc -O2 -Wall -Wcheck -Wshadow -w2 -wd=175,177,279,593,869,810,981,1418,1419,310,1572 -c utoprim_1d.c -lm
+utoprim_1d_opt.o :
+	mpicc -cc=icc -O2 -Wall -Wcheck -Wshadow -w2 -wd=175,177,279,593,869,810,981,1418,1419,310,1572 -c utoprim_1d_opt.c -lm
+utoprim_ldz.o :
+	mpicc -cc=icc -O2 -Wall -Wcheck -Wshadow -w2 -wd=175,177,279,593,869,810,981,1418,1419,310,1572 -c utoprim_ldz.c -lm
+utoprim_jon.o :
+	mpicc -cc=icc -O2 -Wall -Wcheck -Wshadow -w2 -wd=175,177,279,593,869,810,981,1418,1419,310,1572 -c utoprim_jon.c -lm
+utoprim_1d_final.o :
+	mpicc -cc=icc -O2 -Wall -Wcheck -Wshadow -w2 -wd=175,177,279,593,869,810,981,1418,1419,310,1572 -c utoprim_1d_final.c -lm
+utoprim_2d_final.o :
+	mpicc -cc=icc -O2 -Wall -Wcheck -Wshadow -w2 -wd=175,177,279,593,869,810,981,1418,1419,310,1572 -c utoprim_2d_final.c -lm
+utoprim_5d2_final.o :
+	mpicc -cc=icc -O2 -Wall -Wcheck -Wshadow -w2 -wd=175,177,279,593,869,810,981,1418,1419,310,1572 -c utoprim_5d2_final.c -lm

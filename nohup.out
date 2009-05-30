@@ -1,0 +1,613 @@
+mpicc -cc=icc -mp -pc64 -O2 -Wall -Wcheck -Wshadow -w2 -wd=175,177,279,593,869,810,981,1418,1419,310,1572 -mp -pc64 -c fixup.c -lm
+fixup.c(1463): warning #1011: missing return statement at end of non-void function "fixup_utoprim"
+    }// end if doing avg-type fixup of failures
+    ^
+
+fixup.c(1464): error: expected a declaration
+    return(0);
+    ^
+
+fixup.c(1465): error: expected a declaration
+  }
+  ^
+
+fixup.c(1500): warning #12: parsing restarts here after previous syntax error
+    else output=1;
+                 ^
+
+fixup.c(1502): error: expected a declaration
+    if(output){
+    ^
+
+fixup.c(1523): warning #12: parsing restarts here after previous syntax error
+      PDUMPLOOP(pl) fprintf(super_fail_file,"%21.15g %21.15g %21.15g %21.15g ",pr0[pl],pr[pl],Ui[pl],Uf[pl]);
+                                                                                                            ^
+
+fixup.c(1524): error: expected an identifier
+      fprintf(super_fail_file,"\n");
+                              ^
+
+fixup.c(1524): warning #880: omission of explicit type is nonstandard ("int" assumed)
+      fprintf(super_fail_file,"\n");
+      ^
+
+fixup.c(1524): warning #92: identifier-list parameters may only be used in a function definition
+      fprintf(super_fail_file,"\n");
+      ^
+
+fixup.c(1524): warning #310: old-style parameter list (anachronism)
+      fprintf(super_fail_file,"\n");
+      ^
+
+fixup.c(1524): warning #147: declaration is incompatible with "int fprintf(FILE *restrict, const char *restrict, ...)" (declared at line 321 of "/usr/include/stdio.h")
+      fprintf(super_fail_file,"\n");
+      ^
+
+fixup.c(1525): error: expected a declaration
+      if(!(countoutput%1000)) fflush(super_fail_file);
+      ^
+
+fixup.c(1526): warning #77: this declaration has no storage class or type specifier
+      countoutput++;
+      ^
+
+fixup.c(1526): error: expected a ";"
+      countoutput++;
+                 ^
+
+fixup.c(1527): error: expected a declaration
+    }
+    ^
+
+fixup.c(1531): warning #12: parsing restarts here after previous syntax error
+    firsttime=0;
+               ^
+
+fixup.c(1533): error: expected a declaration
+    return(0);
+    ^
+
+fixup.c(1534): error: expected a declaration
+  }
+  ^
+
+fixup.c(1562): warning #12: parsing restarts here after previous syntax error
+        prfloor[RHO] = prfloorcoef[RHO]*pow(r, -1.5); 
+                                                    ^
+
+fixup.c(1563): warning #77: this declaration has no storage class or type specifier
+        prfloor[UU] = prfloorcoef[UU]*pow(r,-2.5);
+        ^
+
+fixup.c(1563): error: function call is not allowed in a constant expression
+        prfloor[UU] = prfloorcoef[UU]*pow(r,-2.5);
+                                      ^
+
+fixup.c(1563): error: identifier "r" is undefined
+        prfloor[UU] = prfloorcoef[UU]*pow(r,-2.5);
+                                          ^
+
+fixup.c(1563): error: expression must have a constant value
+        prfloor[UU] = prfloorcoef[UU]*pow(r,-2.5);
+                      ^
+
+fixup.c(1564): error: expected a declaration
+      }
+      ^
+
+fixup.c(1602): warning #12: parsing restarts here after previous syntax error
+        prfloor[RHO]=-U[UU]/(ptrgeom->g * GAMMAMAX * (q.ucon[TT]));
+                                                                  ^
+
+fixup.c(1603): warning #77: this declaration has no storage class or type specifier
+        prfloor[UU]=prfloor[RHO]*0.01; // cold injection
+        ^
+
+fixup.c(1603): error: variable "prfloor" has already been initialized
+        prfloor[UU]=prfloor[RHO]*0.01; // cold injection
+        ^
+
+fixup.c(1603): error: expression must have a constant value
+        prfloor[UU]=prfloor[RHO]*0.01; // cold injection
+                    ^
+
+fixup.c(1605): error: expected a declaration
+      }
+      ^
+
+fixup.c(1649): warning #12: parsing restarts here after previous syntax error
+    return(0);
+             ^
+
+fixup.c(1650): error: expected a declaration
+  }
+  ^
+
+fixup.c(1689): warning #12: parsing restarts here after previous syntax error
+    prlocal[UU]  = UUMIN*pow(r,-2.5);
+                                    ^
+
+fixup.c(1698): error: expected a declaration
+    if(whichvel==VEL4){
+    ^
+
+fixup.c(1738): warning #12: parsing restarts here after previous syntax error
+    return(0);
+             ^
+
+fixup.c(1740): error: expected a declaration
+  }
+  ^
+
+fixup.c(1770): warning #12: parsing restarts here after previous syntax error
+      pflag[i][j][k][FLAGBSQORHO]=0;
+                                   ^
+
+fixup.c(1776): error: expected a declaration
+      if(bsq/pv[i][j][k][RHO]>BSQORHOLIMIT) flags[0]=2;
+      ^
+
+fixup.c(1777): error: expected a declaration
+      else if(bsq/pv[i][j][k][RHO]>0.9*BSQORHOLIMIT) flags[0]=1;
+      ^
+
+fixup.c(1778): error: expected a declaration
+      else flags[0]=0;
+      ^
+
+fixup.c(1785): error: expected a declaration
+      if(bsq/pv[i][j][k][UU]>BSQOULIMIT) flags[3]=2;
+      ^
+
+fixup.c(1786): error: expected a declaration
+      else if(bsq/pv[i][j][k][UU]>0.9*BSQOULIMIT) flags[3]=1;
+      ^
+
+fixup.c(1787): error: expected a declaration
+      else flags[3]=0;
+      ^
+
+fixup.c(1794): error: expected a declaration
+      if(gamma_calc(pv[i][j][k],&geom,&gamma)>=1){
+      ^
+
+fixup.c(1800): warning #12: parsing restarts here after previous syntax error
+      if(gamma>2.0*GAMMADAMP) flags[1]=2;
+                                        ^
+
+fixup.c(1801): error: expected a declaration
+      else if(gamma>GAMMADAMP) flags[1]=1;
+      ^
+
+fixup.c(1802): error: expected a declaration
+      else flags[1]=0;
+      ^
+
+fixup.c(1825): error: identifier "i" is undefined
+      pflag[i][j][k][FLAGBSQORHO]=flags[0];
+            ^
+
+fixup.c(1825): error: identifier "j" is undefined
+      pflag[i][j][k][FLAGBSQORHO]=flags[0];
+               ^
+
+fixup.c(1825): error: identifier "k" is undefined
+      pflag[i][j][k][FLAGBSQORHO]=flags[0];
+                  ^
+
+fixup.c(1825): error: identifier "flags" is undefined
+      pflag[i][j][k][FLAGBSQORHO]=flags[0];
+                                  ^
+
+fixup.c(1826): error: variable "pflag" has already been initialized
+      pflag[i][j][k][FLAGBSQOU]=flags[3];
+      ^
+
+fixup.c(1846): error: expected a declaration
+    }
+    ^
+
+fixup.c(1848): error: expected a declaration
+  }
+  ^
+
+fixup.c(1909): warning #12: parsing restarts here after previous syntax error
+      diag_fixup(pr0, pr, ptrgeom, finalstep,COUNTLIMITGAMMAACT);
+                                                                ^
+
+fixup.c(1911): error: expected a declaration
+      return(-1);// indicates did change primitive
+      ^
+
+fixup.c(1912): error: expected a declaration
+    }
+    ^
+
+fixup.c(1914): error: expected a declaration
+  }
+  ^
+
+fixup.c(1950): warning #12: parsing restarts here after previous syntax error
+    FTYPE pr0[NPR];
+                  ^
+
+fixup.c(1954): error: expected a declaration
+    if(modelpos==-100){ // then utoprim called us from usrfun
+    ^
+
+fixup.c(1961): warning #12: parsing restarts here after previous syntax error
+    toldiscr=1.E-2;
+                  ^
+
+fixup.c(1962): warning #77: this declaration has no storage class or type specifier
+    dampfactorchange=0.5;
+    ^
+
+fixup.c(1963): warning #77: this declaration has no storage class or type specifier
+    dampfactor=1.0;
+    ^
+
+fixup.c(1964): warning #77: this declaration has no storage class or type specifier
+    method=1; // 0=GRADIENTFACTOR 1=damp newton's method
+    ^
+
+fixup.c(1965): warning #77: this declaration has no storage class or type specifier
+    utinterp=0; // whether to fix interpolation (if bad) based upon a model pr
+    ^
+
+fixup.c(1968): error: expected a declaration
+    if(method==1){
+    ^
+
+fixup.c(1973): warning #12: parsing restarts here after previous syntax error
+    whocalleducon=1; // turn off failures
+                   ^
+
+fixup.c(1974): error: expected a declaration
+    if(ucon_calc(pr, ptrgeom, ucon) >= 1) ucon[TT]=1E30; // bad, so keep going
+    ^
+
+fixup.c(1975): warning #77: this declaration has no storage class or type specifier
+    uttdiscr0=lastuttdiscr=uttdiscr; // ucon_calc() set uttdiscr
+    ^
+
+fixup.c(1975): error: identifier "lastuttdiscr" is undefined
+    uttdiscr0=lastuttdiscr=uttdiscr; // ucon_calc() set uttdiscr
+              ^
+
+fixup.c(1975): error: this operator is not allowed in a constant expression
+    uttdiscr0=lastuttdiscr=uttdiscr; // ucon_calc() set uttdiscr
+                          ^
+
+fixup.c(1976): error: expected a declaration
+    if(ucon[TT]<UTLIMIT) return(0); // good, so just continue calculations
+    ^
+
+fixup.c(1984): error: expected a declaration
+    PLOOP(pl)    pr0[pl]=pr[pl];
+    ^
+
+fixup.c(1988): error: expected a declaration
+    if(modelpos==-2) return(1); // don't try to correct, just fail since ucon[TT] wasn't less than the limit (otherwise wouldn't reach here).  Used to just check, no fix.
+    ^
+
+fixup.c(1990): error: expected a declaration
+    if(modelpos==-3){
+    ^
+
+fixup.c(1994): warning #12: parsing restarts here after previous syntax error
+    else bctype=0; // non-bound call
+                 ^
+
+fixup.c(2002): error: expected a declaration
+    for(i=1;i<=3;i++){
+    ^
+
+fixup.c(2007): warning #12: parsing restarts here after previous syntax error
+    whocalleducon=0;
+                   ^
+
+fixup.c(2008): error: expected a declaration
+    if(ucon_calc(probs, ptrgeom, ucon) >= 1){
+    ^
+
+fixup.c(2012): warning #12: parsing restarts here after previous syntax error
+    else utobs=ucon[TT];
+                       ^
+
+fixup.c(2013): warning #77: this declaration has no storage class or type specifier
+    whocalleducon=1;
+    ^
+
+fixup.c(2016): error: expected a declaration
+    if(utinterp&&(modelpos>=0)){ // use modelpos==-1 for no use of model
+    ^
+
+fixup.c(2037): warning #12: parsing restarts here after previous syntax error
+        modeli=ptrgeom->i;
+                         ^
+
+fixup.c(2038): warning #77: this declaration has no storage class or type specifier
+        modelj=ptrgeom->j;
+        ^
+
+fixup.c(2038): error: identifier "ptrgeom" is undefined
+        modelj=ptrgeom->j;
+               ^
+
+fixup.c(2039): warning #77: this declaration has no storage class or type specifier
+        modelk=ptrgeom->k;
+        ^
+
+fixup.c(2041): error: expected an identifier
+        get_geometry(modeli,modelj,modelk,CENT,&modelgeom);
+                                          ^
+
+fixup.c(2041): error: expected an identifier
+        get_geometry(modeli,modelj,modelk,CENT,&modelgeom);
+                                               ^
+
+fixup.c(2041): warning #880: omission of explicit type is nonstandard ("int" assumed)
+        get_geometry(modeli,modelj,modelk,CENT,&modelgeom);
+        ^
+
+fixup.c(2041): warning #92: identifier-list parameters may only be used in a function definition
+        get_geometry(modeli,modelj,modelk,CENT,&modelgeom);
+        ^
+
+fixup.c(2041): warning #310: old-style parameter list (anachronism)
+        get_geometry(modeli,modelj,modelk,CENT,&modelgeom);
+        ^
+
+fixup.c(2041): warning #147: declaration is incompatible with "void get_geometry(int, int, int, int, struct of_geom *)" (declared at line 2052 of "global.h")
+        get_geometry(modeli,modelj,modelk,CENT,&modelgeom);
+        ^
+
+fixup.c(2042): warning #77: this declaration has no storage class or type specifier
+        ptrmodelgeom=&modelgeom;
+        ^
+
+fixup.c(2042): error: identifier "modelgeom" is undefined
+        ptrmodelgeom=&modelgeom;
+                      ^
+
+fixup.c(2043): error: expected a declaration
+      }
+      ^
+
+fixup.c(2056): warning #12: parsing restarts here after previous syntax error
+      else realutlimit=uconmodel[TT]; // model ut
+                                    ^
+
+fixup.c(2057): warning #77: this declaration has no storage class or type specifier
+      modeldiscr=uttdiscr;
+      ^
+
+fixup.c(2057): error: expression must have a constant value
+      modeldiscr=uttdiscr;
+                 ^
+
+fixup.c(2060): error: expected a declaration
+      if(realutlimit>UTLIMIT) realutlimit=UTLIMIT;
+      ^
+
+fixup.c(2061): error: expected a declaration
+    }
+    ^
+
+fixup.c(2064): warning #77: this declaration has no storage class or type specifier
+    realdiscrlimit=1.0/(realutlimit*realutlimit);
+    ^
+
+fixup.c(2064): error: identifier "realutlimit" is undefined
+    realdiscrlimit=1.0/(realutlimit*realutlimit);
+                        ^
+
+fixup.c(2065): warning #77: this declaration has no storage class or type specifier
+    newerr=olderr=fabs(lastuttdiscr-realdiscrlimit)/realdiscrlimit;
+    ^
+
+fixup.c(2065): error: identifier "olderr" is undefined
+    newerr=olderr=fabs(lastuttdiscr-realdiscrlimit)/realdiscrlimit;
+           ^
+
+fixup.c(2065): error: this operator is not allowed in a constant expression
+    newerr=olderr=fabs(lastuttdiscr-realdiscrlimit)/realdiscrlimit;
+                 ^
+
+fixup.c(2065): error: function call is not allowed in a constant expression
+    newerr=olderr=fabs(lastuttdiscr-realdiscrlimit)/realdiscrlimit;
+                  ^
+
+fixup.c(2065): error: expression must have a constant value
+    newerr=olderr=fabs(lastuttdiscr-realdiscrlimit)/realdiscrlimit;
+                                    ^
+
+fixup.c(2065): error: expression must have a constant value
+    newerr=olderr=fabs(lastuttdiscr-realdiscrlimit)/realdiscrlimit;
+                                                    ^
+
+fixup.c(2072): warning #77: this declaration has no storage class or type specifier
+    failedcheck=0;
+    ^
+
+fixup.c(2074): warning #77: this declaration has no storage class or type specifier
+    trialcount=0;
+    ^
+
+fixup.c(2075): error: expected a declaration
+    while( ((newerr>toldiscr)&&(method==1)) ||((ucon[TT]>realutlimit)&&(method==0)) ){
+    ^
+
+fixup.c(2096): warning #12: parsing restarts here after previous syntax error
+  	pr[U1+i-1]-=gradient[i]*GRADIENTFACTOR*((FTYPE)(ntrials)+1.0)/((FTYPE)(ntrials)-(FTYPE)(trialcount)+1.0);
+  	                                                                                                        ^
+
+fixup.c(2098): error: expected a declaration
+        }
+        ^
+
+fixup.c(2108): warning #12: parsing restarts here after previous syntax error
+      if(ucon_calc(pr, ptrgeom, ucon) >= 1) ucon[TT]=1E30; // bad bad, keep going
+                                                         ^
+
+fixup.c(2109): warning #77: this declaration has no storage class or type specifier
+      newerr=fabs(uttdiscr-realdiscrlimit)/realdiscrlimit;
+      ^
+
+fixup.c(2109): error: variable "newerr" has already been initialized
+      newerr=fabs(uttdiscr-realdiscrlimit)/realdiscrlimit;
+      ^
+
+fixup.c(2109): error: function call is not allowed in a constant expression
+      newerr=fabs(uttdiscr-realdiscrlimit)/realdiscrlimit;
+             ^
+
+fixup.c(2109): error: expression must have a constant value
+      newerr=fabs(uttdiscr-realdiscrlimit)/realdiscrlimit;
+                  ^
+
+fixup.c(2109): error: expression must have a constant value
+      newerr=fabs(uttdiscr-realdiscrlimit)/realdiscrlimit;
+                           ^
+
+fixup.c(2109): error: expression must have a constant value
+      newerr=fabs(uttdiscr-realdiscrlimit)/realdiscrlimit;
+                                           ^
+
+fixup.c(2110): error: expected a declaration
+      if((method==1)&&(newerr>=olderr)){
+      ^
+
+fixup.c(2145): warning #12: parsing restarts here after previous syntax error
+    whocalleducon=0; // turn back on failures
+                   ^
+
+fixup.c(2147): error: expected a declaration
+    if(failedcheck){
+    ^
+
+fixup.c(2164): warning #12: parsing restarts here after previous syntax error
+    diag_fixup(pr0, pr, ptrgeom, finalstep,COUNTLIMITGAMMAACT);
+                                                              ^
+
+fixup.c(2167): error: expected a declaration
+    return(0);
+    ^
+
+fixup.c(2168): error: expected a declaration
+  }
+  ^
+
+fixup.c(2253): warning #12: parsing restarts here after previous syntax error
+    else return(1); // uh
+                  ^
+
+fixup.c(2255): error: expected a declaration
+    return(0);
+    ^
+
+fixup.c(2256): error: expected a declaration
+  }
+  ^
+
+fixup.c(2290): warning #12: parsing restarts here after previous syntax error
+    MYFUN(ucon_calc(pr, ptrgeom, ucon),"fixup.c:inflow_check_rel4vel()", "ucon_calc() dir=0", 1);
+                                                                                                ^
+
+fixup.c(2294): warning #77: this declaration has no storage class or type specifier
+    dofix=0;
+    ^
+
+fixup.c(2295): error: expected a declaration
+    if(dir==1){
+    ^
+
+fixup.c(2340): warning #12: parsing restarts here after previous syntax error
+    else return(1); // uh
+                  ^
+
+fixup.c(2344): error: expected a declaration
+    if(dofix){
+    ^
+
+fixup.c(2374): warning #12: parsing restarts here after previous syntax error
+      vsq = 0. ;
+               ^
+
+fixup.c(2375): error: expected a declaration
+      SLOOP(j,k) vsq += ptrgeom->gcov[j][k]*pr[U1+j-1]*pr[U1+k-1] ;
+      ^
+
+fixup.c(2377): error: expected a declaration
+      if(vsq<0.0){
+      ^
+
+fixup.c(2391): warning #12: parsing restarts here after previous syntax error
+      gamma = 1./sqrt(1. - vsq) ;
+                                ^
+
+fixup.c(2392): warning #77: this declaration has no storage class or type specifier
+      pr[U1] *= gamma ;
+      ^
+
+fixup.c(2392): error: expected a ";"
+      pr[U1] *= gamma ;
+             ^
+
+fixup.c(2393): warning #77: this declaration has no storage class or type specifier
+      pr[U2] *= gamma ;
+      ^
+
+fixup.c(2393): error: declaration is incompatible with "int pr[2]" (declared at line 2392)
+      pr[U2] *= gamma ;
+      ^
+
+fixup.c(2393): error: expected a ";"
+      pr[U2] *= gamma ;
+             ^
+
+fixup.c(2394): warning #77: this declaration has no storage class or type specifier
+      pr[U3] *= gamma ;
+      ^
+
+fixup.c(2394): error: declaration is incompatible with "int pr[3]" (declared at line 2393)
+      pr[U3] *= gamma ;
+      ^
+
+fixup.c(2394): error: expected a ";"
+      pr[U3] *= gamma ;
+             ^
+
+fixup.c(2397): error: expected an identifier
+      diag_fixup(pr0, pr, ptrgeom, finalstep,COUNTINFLOWACT);
+                                             ^
+
+fixup.c(2397): warning #880: omission of explicit type is nonstandard ("int" assumed)
+      diag_fixup(pr0, pr, ptrgeom, finalstep,COUNTINFLOWACT);
+      ^
+
+fixup.c(2397): warning #92: identifier-list parameters may only be used in a function definition
+      diag_fixup(pr0, pr, ptrgeom, finalstep,COUNTINFLOWACT);
+      ^
+
+fixup.c(2397): warning #310: old-style parameter list (anachronism)
+      diag_fixup(pr0, pr, ptrgeom, finalstep,COUNTINFLOWACT);
+      ^
+
+fixup.c(2401): error: expected a declaration
+      return(-1);
+      ^
+
+fixup.c(2402): error: expected a declaration
+    }
+    ^
+
+fixup.c(2405): error: expected a declaration
+  }
+  ^
+
+fixup.c(2469): warning #12: parsing restarts here after previous syntax error
+
+compilation aborted for fixup.c (code 2)
+make: *** [fixup.o] Error 2
