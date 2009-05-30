@@ -1,0 +1,60 @@
+init.o: init.c decs.h global.h metric.h coord.h definit.h init.h mympi.h \
+ mpidecs.h coord.h reconstructeno.h
+initbase.o: initbase.c decs.h global.h metric.h coord.h definit.h init.h mympi.h \
+ mpidecs.h
+restart.o: restart.c decs.h global.h metric.h coord.h definit.h init.h mympi.h \
+ mpidecs.h
+set_arrays.o: set_arrays.c decs.h global.h metric.h coord.h definit.h init.h \
+ mympi.h mpidecs.h
+set_grid.o: set_grid.c decs.h global.h metric.h coord.h definit.h init.h mympi.h \
+ mpidecs.h
+advance.o: advance.c decs.h global.h metric.h coord.h definit.h init.h mympi.h \
+ mpidecs.h
+reconstructeno.o: reconstructeno.c decs.h global.h metric.h coord.h definit.h \
+ init.h mympi.h mpidecs.h reconstructeno.h reconstructeno_static.h
+flux.o: flux.c decs.h global.h metric.h coord.h definit.h init.h mympi.h \
+ mpidecs.h
+wavespeeds.o: wavespeeds.c decs.h global.h metric.h coord.h definit.h init.h \
+ mympi.h mpidecs.h
+boundsflux.o: boundsflux.c decs.h global.h metric.h coord.h definit.h init.h \
+ mympi.h mpidecs.h
+fluxct.o: fluxct.c decs.h global.h metric.h coord.h definit.h init.h mympi.h \
+ mpidecs.h
+fluxcompute.o: fluxcompute.c decs.h global.h metric.h coord.h definit.h init.h \
+ mympi.h mpidecs.h
+bounds.o: bounds.c decs.h global.h metric.h coord.h definit.h init.h mympi.h \
+ mpidecs.h reconstructeno.h
+boundsint.o: boundsint.c decs.h global.h metric.h coord.h definit.h init.h \
+ mympi.h mpidecs.h
+diag.o: diag.c decs.h global.h metric.h coord.h definit.h init.h mympi.h \
+ mpidecs.h
+dump.o: dump.c decs.h global.h metric.h coord.h definit.h init.h mympi.h \
+ mpidecs.h
+dumpgen.o: dumpgen.c decs.h global.h metric.h coord.h definit.h init.h mympi.h \
+ mpidecs.h
+dump_ener.o: dump_ener.c decs.h global.h metric.h coord.h definit.h init.h \
+ mympi.h mpidecs.h
+image.o: image.c decs.h global.h metric.h coord.h definit.h init.h mympi.h \
+ mpidecs.h
+fail.o: fail.c decs.h global.h metric.h coord.h definit.h init.h mympi.h \
+ mpidecs.h
+fixup.o: fixup.c decs.h global.h metric.h coord.h definit.h init.h mympi.h \
+ mpidecs.h
+mpi_init.o: mpi_init.c decs.h global.h metric.h coord.h definit.h init.h mympi.h \
+ mpidecs.h
+mpi_fileio.o: mpi_fileio.c decs.h global.h metric.h coord.h definit.h init.h \
+ mympi.h mpidecs.h
+boundmpi.o: boundmpi.c decs.h global.h metric.h coord.h definit.h init.h mympi.h \
+ mpidecs.h
+boundmpiint.o: boundmpiint.c decs.h global.h metric.h coord.h definit.h init.h \
+ mympi.h mpidecs.h
+interppoint.o: interppoint.c decs.h global.h metric.h coord.h definit.h init.h \
+ mympi.h mpidecs.h
+interpline.o: interpline.c decs.h global.h metric.h coord.h definit.h init.h \
+ mympi.h mpidecs.h reconstructeno.h
+monointerp.o: monointerp.c decs.h global.h metric.h coord.h definit.h init.h \
+ mympi.h mpidecs.h reconstructeno.h smonointerp.h
+jmonointerp.o: jmonointerp.c decs.h global.h metric.h coord.h definit.h init.h \
+ mympi.h mpidecs.h reconstructeno.h
+smonointerp.o: smonointerp.c decs.h global.h metric.h coord.h definit.h init.h \
+ mympi.h mpidecs.h reconstructeno.h smonointerp_static.h smonointerp.h

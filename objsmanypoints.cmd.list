@@ -1,0 +1,60 @@
+init.o :
+	mpicc -cc=icc -mp -pc64 -O2 -Wall -Wcheck -Wshadow -w2 -wd=175,177,279,593,869,810,981,1418,1419,310,1572 -c init.c -lm
+initbase.o :
+	mpicc -cc=icc -mp -pc64 -O2 -Wall -Wcheck -Wshadow -w2 -wd=175,177,279,593,869,810,981,1418,1419,310,1572 -c initbase.c -lm
+restart.o :
+	mpicc -cc=icc -mp -pc64 -O2 -Wall -Wcheck -Wshadow -w2 -wd=175,177,279,593,869,810,981,1418,1419,310,1572 -c restart.c -lm
+set_arrays.o :
+	mpicc -cc=icc -mp -pc64 -O2 -Wall -Wcheck -Wshadow -w2 -wd=175,177,279,593,869,810,981,1418,1419,310,1572 -c set_arrays.c -lm
+set_grid.o :
+	mpicc -cc=icc -mp -pc64 -O2 -Wall -Wcheck -Wshadow -w2 -wd=175,177,279,593,869,810,981,1418,1419,310,1572 -c set_grid.c -lm
+advance.o :
+	mpicc -cc=icc -mp -pc64 -O2 -Wall -Wcheck -Wshadow -w2 -wd=175,177,279,593,869,810,981,1418,1419,310,1572 -c advance.c -lm
+reconstructeno.o :
+	mpicc -cc=icc -mp -pc64 -O2 -Wall -Wcheck -Wshadow -w2 -wd=175,177,279,593,869,810,981,1418,1419,310,1572 -c reconstructeno.c -lm
+flux.o :
+	mpicc -cc=icc -mp -pc64 -O2 -Wall -Wcheck -Wshadow -w2 -wd=175,177,279,593,869,810,981,1418,1419,310,1572 -c flux.c -lm
+wavespeeds.o :
+	mpicc -cc=icc -mp -pc64 -O2 -Wall -Wcheck -Wshadow -w2 -wd=175,177,279,593,869,810,981,1418,1419,310,1572 -c wavespeeds.c -lm
+boundsflux.o :
+	mpicc -cc=icc -mp -pc64 -O2 -Wall -Wcheck -Wshadow -w2 -wd=175,177,279,593,869,810,981,1418,1419,310,1572 -c boundsflux.c -lm
+fluxct.o :
+	mpicc -cc=icc -mp -pc64 -O2 -Wall -Wcheck -Wshadow -w2 -wd=175,177,279,593,869,810,981,1418,1419,310,1572 -c fluxct.c -lm
+fluxcompute.o :
+	mpicc -cc=icc -mp -pc64 -O2 -Wall -Wcheck -Wshadow -w2 -wd=175,177,279,593,869,810,981,1418,1419,310,1572 -c fluxcompute.c -lm
+bounds.o :
+	mpicc -cc=icc -mp -pc64 -O2 -Wall -Wcheck -Wshadow -w2 -wd=175,177,279,593,869,810,981,1418,1419,310,1572 -c bounds.c -lm
+boundsint.o :
+	mpicc -cc=icc -mp -pc64 -O2 -Wall -Wcheck -Wshadow -w2 -wd=175,177,279,593,869,810,981,1418,1419,310,1572 -c boundsint.c -lm
+diag.o :
+	mpicc -cc=icc -mp -pc64 -O2 -Wall -Wcheck -Wshadow -w2 -wd=175,177,279,593,869,810,981,1418,1419,310,1572 -c diag.c -lm
+dump.o :
+	mpicc -cc=icc -mp -pc64 -O2 -Wall -Wcheck -Wshadow -w2 -wd=175,177,279,593,869,810,981,1418,1419,310,1572 -c dump.c -lm
+dumpgen.o :
+	mpicc -cc=icc -mp -pc64 -O2 -Wall -Wcheck -Wshadow -w2 -wd=175,177,279,593,869,810,981,1418,1419,310,1572 -c dumpgen.c -lm
+dump_ener.o :
+	mpicc -cc=icc -mp -pc64 -O2 -Wall -Wcheck -Wshadow -w2 -wd=175,177,279,593,869,810,981,1418,1419,310,1572 -c dump_ener.c -lm
+image.o :
+	mpicc -cc=icc -mp -pc64 -O2 -Wall -Wcheck -Wshadow -w2 -wd=175,177,279,593,869,810,981,1418,1419,310,1572 -c image.c -lm
+fail.o :
+	mpicc -cc=icc -mp -pc64 -O2 -Wall -Wcheck -Wshadow -w2 -wd=175,177,279,593,869,810,981,1418,1419,310,1572 -c fail.c -lm
+fixup.o :
+	mpicc -cc=icc -mp -pc64 -O2 -Wall -Wcheck -Wshadow -w2 -wd=175,177,279,593,869,810,981,1418,1419,310,1572 -c fixup.c -lm
+mpi_init.o :
+	mpicc -cc=icc -mp -pc64 -O2 -Wall -Wcheck -Wshadow -w2 -wd=175,177,279,593,869,810,981,1418,1419,310,1572 -c mpi_init.c -lm
+mpi_fileio.o :
+	mpicc -cc=icc -mp -pc64 -O2 -Wall -Wcheck -Wshadow -w2 -wd=175,177,279,593,869,810,981,1418,1419,310,1572 -c mpi_fileio.c -lm
+boundmpi.o :
+	mpicc -cc=icc -mp -pc64 -O2 -Wall -Wcheck -Wshadow -w2 -wd=175,177,279,593,869,810,981,1418,1419,310,1572 -c boundmpi.c -lm
+boundmpiint.o :
+	mpicc -cc=icc -mp -pc64 -O2 -Wall -Wcheck -Wshadow -w2 -wd=175,177,279,593,869,810,981,1418,1419,310,1572 -c boundmpiint.c -lm
+interppoint.o :
+	mpicc -cc=icc -mp -pc64 -O2 -Wall -Wcheck -Wshadow -w2 -wd=175,177,279,593,869,810,981,1418,1419,310,1572 -c interppoint.c -lm
+interpline.o :
+	mpicc -cc=icc -mp -pc64 -O2 -Wall -Wcheck -Wshadow -w2 -wd=175,177,279,593,869,810,981,1418,1419,310,1572 -c interpline.c -lm
+monointerp.o :
+	mpicc -cc=icc -mp -pc64 -O2 -Wall -Wcheck -Wshadow -w2 -wd=175,177,279,593,869,810,981,1418,1419,310,1572 -c monointerp.c -lm
+jmonointerp.o :
+	mpicc -cc=icc -mp -pc64 -O2 -Wall -Wcheck -Wshadow -w2 -wd=175,177,279,593,869,810,981,1418,1419,310,1572 -c jmonointerp.c -lm
+smonointerp.o :
+	mpicc -cc=icc -mp -pc64 -O2 -Wall -Wcheck -Wshadow -w2 -wd=175,177,279,593,869,810,981,1418,1419,310,1572 -c smonointerp.c -lm
